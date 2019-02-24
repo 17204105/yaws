@@ -1474,7 +1474,12 @@ description of the \fIstart_mod\fR directive.
 This mechanism can be used to pass data from a surrounding application into the
 individual .yaws pages.
 
-
+.TP
+\fB<extra_response_headers> ... </extra_response_headers>\fR
+This begins and ends a configuration context for extra response headers for this
+server, where 'Header = Value' directives can be specified. Each such response
+header and value is appended to all outgoing responses except for those returned
+directly by any \fIDispatchModule\fR.
 
 
 .SH EXAMPLES
